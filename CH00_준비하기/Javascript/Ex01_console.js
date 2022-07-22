@@ -9,3 +9,7 @@ console.log(a, b, c);
 console.log(typeof a);
 
 console.log("value : %d", a);
+
+var json = {id: 1};
+console.log("hello! my id is " + json.id);
+console.log(`hello! my id is ${json.id}`);
