@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add React to Website</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to React World!</h1>
+    </div>
+
+    <div id="root">
+      <!-- react injection -->
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      // btn component
+      const MyBtn = () => {
+        const [isClicked, setIsClicked] = React.useState(false);
+
+        return React.createElement(
+          "button",
+          {
+            onClick: () => {
+              setIsClicked(true);
+            },
+          },
+          isClicked ? "clicked" : "click me"
+        );
+      };
+
+      const domContainer = document.querySelector("#root");
+      ReactDOM.render(React.createElement(MyBtn), domContainer);
+    </script>
+  </body>
+</html>
