@@ -1,9 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
-import UseState01 from "./hooks/useState/UseState01";
+import UseReducer02 from "./hooks/6_useReducer/UseReducer02";
 
 function App() {
-  return <UseState01 />;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <UseReducer02 />
+      </header>
+    </div>
+  );
 }
 
 export default App;
