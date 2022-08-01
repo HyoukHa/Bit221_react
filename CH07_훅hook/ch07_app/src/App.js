@@ -1,11 +1,12 @@
 import "./App.css";
-import UseReducer02 from "./hooks/6_useReducer/UseReducer02";
+import Parents from "./hooks/7_reactMemo/Parents";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UseReducer02 />
+        <Parents />
       </header>
     </div>
   );
