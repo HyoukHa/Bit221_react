@@ -23,6 +23,10 @@ const MyButton = styled.button`
   padding: 3px;
 `
 
+const SmartButton = styled.button`
+  
+`
+
 const MainPage = () => {
   return (
     <Wrapper>
